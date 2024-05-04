@@ -1,4 +1,6 @@
 
+import AppSection from '@/components/AtlasApp/AppSection'
+import CardSection from '@/components/AtlasCard/CardSection'
 import BenefitSection from '@/components/Benefits/BenefitSection'
 import ConciergeSection from '@/components/Concierge/ConciergeSection'
 import DiningSection from '@/components/Dining/DiningSection'
@@ -16,7 +18,8 @@ const Home = () => {
       <HotelSection/>
       <ConciergeSection/>
       <BenefitSection/>
-      
+      <CardSection/>
+      <AppSection/>
     </div>
   )
 }

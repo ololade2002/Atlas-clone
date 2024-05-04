@@ -24,7 +24,7 @@ const sans = Open_Sans({
 })
 
 export const metadata = {
-  title: "Atlas - card",
+  title: "Atlas - Spending, Dining, Travelling",
   description: "Your key to the world",
 };
 

@@ -15,7 +15,7 @@ const MainSection = () => {
          <div className='main-subContainer'>
            <h3 className='main-subText  '>Atlas Dining</h3>
            <p className='main-paragraph '>
-              You want to eat at great restaurants. So does everyone else. The difference is—you’ve got Atlas. 
+              You want to eat at great restaurants. So does everyone else. The difference is—you&apos;ve got Atlas. 
               Discover the hottest restaurants around town with Atlas Dining, and reserve your tables during peak hours.
            </p>
        </div>
@@ -56,10 +56,9 @@ const MainSection = () => {
 
         <div className='main-container4 relative  '>
             <Image className= 'main-image2 ' src={dining} alt='Atlas Dining' />
-
             <ModalSection/>
-        
         </div>
+        
 </div>
    </section>
   )

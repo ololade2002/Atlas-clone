@@ -1,10 +1,9 @@
 
 import React from 'react'
-import dining from '../../public/dining.webp'
 import benefit from '../../public/benefits.webp'
 import Image from 'next/image';
 import PopoverButton from './PopoverButton';
-import { LuPlus } from "react-icons/lu";
+import ModalSection from './ModalSection';
 
 const MainSection = () => {
   return (
@@ -56,15 +55,12 @@ const MainSection = () => {
           </div>
         </div>
 
-        <div className='main-container4'>
-            <Image className='main-image2' src={dining} alt='Atlas Dining' />
-
-            <button className='main-btn'>
-                <h2 className='main-btnText'>Learn More About Atlas Benefits</h2>
-               <div className='main-btnDiv'>
-                 <LuPlus className='main-btnIcon '/>
-              </div> 
-            </button>
+          <div className='main-container4'>
+            <video autoPlay muted loop  playsInline disablePictureInPicture controls={false}  className='main-video2'>
+               <source  src="https://atlascard.com/assets/videos/Benefits.mp4" type="video/mp4"/>    
+            </video>  
+            
+            <ModalSection/>
         </div>
 </div>
    </section>

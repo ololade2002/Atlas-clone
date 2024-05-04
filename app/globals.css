@@ -49,8 +49,14 @@ body {
 .mainsection {
   @apply bg-gradient-to-b from-[#141414] to-black
 }
+.card-mainsection {
+  @apply bg-black
+}
 .subsection-m {
-  @apply py-44
+  @apply py-44 flex flex-col
+}
+.card-subsection-m {
+  @apply pt-24 pb-0 flex flex-col
 }
 .main-container1 {
   @apply  w-full flex flex-col gap-28 justify-center items-center 
@@ -89,10 +95,13 @@ body {
   @apply text-neutral font-rale font-[300] text-[23px] w-8/12
 }
 .main-container4 {
-  @apply flex flex-col gap-5 justify-center items-center
+  @apply flex flex-col gap-5 justify-center items-center relative
 }
 .main-image2 {
-  @apply h-[80vh] object-cover w-[60%] rounded-3xl
+  @apply h-[92vh] object-cover w-[60%] rounded-3xl
+}
+.main-video2 {
+  @apply h-[92vh] object-cover w-[60%] rounded-3xl
 }
 .main-btn {
   @apply bg-[#1e1e1e] hover:bg-[rgba(255,255,255,0.1)] px-8 py-5 flex items-center justify-center gap-3  rounded-2xl mt-10
@@ -124,10 +133,10 @@ body {
   @apply  mx-auto flex flex-col
 }
 .modal-subContainer {
-  @apply w-[42%] flex flex-col mx-auto items-center justify-center
+  @apply w-[58%] flex flex-col mx-auto items-center justify-center
 }
 .modal-mainText {
-  @apply font-rale text-[32px] font-[400] text-primary
+  @apply font-rale text-[32px] font-[400] text-primary text-center
 }
 .modal-subText {
 @apply font-rale text-[27px] font-[300] leading-[1.2] text-center text-neutral pt-1 pb-12
@@ -150,13 +159,21 @@ body {
 .modal-subContainer2Div {
   @apply flex flex-col py-5 px-2
 }
+.modal-subContainer3Div {
+  @apply flex flex-col py-14 px-2
+}
 .modal-subContainer2-h2 {
   @apply font-rale text-[26px] pb-1 font-[400]
 }
 .modal-suncontainer2-p {
   @apply font-mono text-[13px] text-neutral uppercase
 }
-
+.modal-benefit {
+  @apply  flex gap-2  justify-start items-baseline
+}
+.modal-benefit-p {
+  @apply  text-neutral font-rale font-[300] text-[24px] 
+}
 
 .logo {
     background-image: linear-gradient(180deg, #fffc, #ffffff7a);

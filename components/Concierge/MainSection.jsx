@@ -1,10 +1,10 @@
 
 import React from 'react'
-import dining from '../../public/dining.webp'
+import dining from '../../public/experiences.webp'
 import experience from '../../public/experiences.webp'
 import Image from 'next/image';
 import PopoverButton from './PopoverButton';
-import { LuPlus } from "react-icons/lu";
+
 
 const MainSection = () => {
   return (
@@ -14,7 +14,7 @@ const MainSection = () => {
          <h1 className='main-text'>Experience the action up close.</h1>
 
          <div className='main-subContainer'>
-           <h3 className='main-subText] '>Atlas Experiences</h3>
+           <h3 className='main-subText '>Atlas Experiences</h3>
            <p className='main-paragraph'>
            Get unique access to exclusive experiences, from backstage passes at sold-out concerts,
            to front-row seats at the biggest sporting events, all through one text to your Atlas concierge.
@@ -58,12 +58,6 @@ const MainSection = () => {
         <div className='main-container4'>
             <Image className='main-image2' src={dining} alt='Atlas Dining' />
 
-            <button className='main-btn'>
-                <h2 className='main-btnText '>Learn More About Atlas Experience</h2>
-               <div className='main-btnDiv'>
-                 <LuPlus className='main-btnIcon '/>
-              </div> 
-            </button>
         </div>
 </div>
    </section>

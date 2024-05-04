@@ -4,6 +4,7 @@ import Image from 'next/image';
 import hotel from '../../public/hotels.webp'
 import PopoverButton from './PopoverButton';
 import { LuPlus } from "react-icons/lu";
+import ModalSection from './ModalSection';
 
 const MainSection = () => {
   return (
@@ -61,13 +62,8 @@ const MainSection = () => {
 
         <div className='main-container4'>
             <Image className='main-image2 ' src={hotel} alt='Atlas Hotel' />
-
-            <button className='main-btn'>
-                <h2 className=' main-btnText'>Learn More About Atlas Hotels</h2>
-               <div className='main-btnDiv'>
-                 <LuPlus className='main-btnIcon '/>
-              </div> 
-            </button>
+             
+             <ModalSection/>
         </div>
 </div>
    </section>
