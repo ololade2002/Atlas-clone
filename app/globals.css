@@ -2,17 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  scrollbar-color: #3d3d3d #141414;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
 
+
 @media (prefers-color-scheme: dark) {
+
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --color-1: hsla(0,0%,100%,.15);
+    --color-2: hsla(0,0%,100%,.09);
   }
 }
 
@@ -30,4 +44,237 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.mainsection {
+  @apply bg-gradient-to-b from-[#141414] to-black
+}
+.subsection-m {
+  @apply py-44
+}
+.main-container1 {
+  @apply  w-full flex flex-col gap-28 justify-center items-center 
+}
+.main-text {
+  @apply text-gradient text-[90px] leading-[1] font-rale w-[50%] text-center
+}
+.main-subContainer {
+  @apply w-[50%] text-center pb-40
+}
+.main-subText {
+  @apply text-primary font-rale text-[28px] font-[400]
+}
+.main-paragraph {
+  @apply text-neutral font-rale font-[400] text-[26px] opacity-80
+}
+.main-container2 {
+  @apply relative z-0
+}
+.main-image1 {
+  @apply h-[106vh] w-full object-cover
+}
+.main-container3 {
+  @apply py-44 w-full flex flex-col items-center justify-center
+}
+.main-subContainer3 {
+  @apply w-[60%]
+}
+.dining-main {
+  @apply flex flex-row gap-[3.75rem] py-[4.5rem]
+}
+.dining-text {
+  @apply text-primary font-rale font-[300] text-[24px] w-4/12
+}
+.dining-subText {
+  @apply text-neutral font-rale font-[300] text-[23px] w-8/12
+}
+.main-container4 {
+  @apply flex flex-col gap-5 justify-center items-center
+}
+.main-image2 {
+  @apply h-[80vh] object-cover w-[60%] rounded-3xl
+}
+.main-btn {
+  @apply bg-[#1e1e1e] hover:bg-[rgba(255,255,255,0.1)] px-8 py-5 flex items-center justify-center gap-3  rounded-2xl mt-10
+}
+.main-btnText {
+  @apply font-rale text-[22px] font-[300]
+}
+.main-btnDiv {
+  @apply bg-secondary rounded-full h-7 w-7 flex items-center justify-center
+}
+.main-btnIcon {
+  @apply text-white text-[20px]
+}
+
+/*Modal Section*/
+.modal-panel {
+  @apply w-[100vw] h-full bg-[#1e1e1e] transform overflow-hidden  py-10 text-left align-middle shadow-xl
+}
+.modal-subPanel {
+  @apply w-[80vw] pt-28 pb-14 px-6  bg-black relative rounded-3xl flex flex-col items-center justify-center mx-auto
+}
+.modal-btn {
+  @apply pt-6 outline-none absolute right-10 top-1
+}
+.modal-btnIcon {
+  @apply text-[40px] text-white hover:opacity-80 
+}
+.modal-container1 {
+  @apply  mx-auto flex flex-col
+}
+.modal-subContainer {
+  @apply w-[42%] flex flex-col mx-auto items-center justify-center
+}
+.modal-mainText {
+  @apply font-rale text-[32px] font-[400] text-primary
+}
+.modal-subText {
+@apply font-rale text-[27px] font-[300] leading-[1.2] text-center text-neutral pt-1 pb-12
+}
+.modal-video {
+  @apply  relative z-0 object-contain w-[45%] flex flex-col mx-auto 
+}
+.modal-line {
+  @apply h-[1px] w-[60%] mx-auto bg-[#272727]
+}
+.modal-p {
+  @apply mx-auto flex items-center justify-center font-mono py-6 text-[12px] text-neutral 
+}
+.modal-container2 {
+  @apply w-[50%]  flex flex-col justify-center items-center mx-auto
+}
+.modal-subContainer2 {
+  @apply w-[100%] py-12
+}
+.modal-subContainer2Div {
+  @apply flex flex-col py-5 px-2
+}
+.modal-subContainer2-h2 {
+  @apply font-rale text-[26px] pb-1 font-[400]
+}
+.modal-suncontainer2-p {
+  @apply font-mono text-[13px] text-neutral uppercase
+}
+
+
+.logo {
+    background-image: linear-gradient(180deg, #fffc, #ffffff7a);
+    border-radius: 1rem;
+    box-shadow: 2px 4px 20px #0000000a;
+    width: fit-content;
+    position: fixed;
+    top: 2.5%;
+    left: 48%;
+    padding: 5px 5px; 
+}
+.heroText {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+}
+
+/*Popover Card*/
+.popover-container {
+  position: relative;
+}
+
+.popover-card {
+  width: 60vh;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(36px);
+  background-image: linear-gradient(180deg, #fffc, #ffffff7a);
+  background-color: #f0f0f070;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 20px #0000000a;
+}
+
+.popover-card button {
+  margin-top: 10px;
+}
+
+.wf {
+  width: fit-content;
+}
+
+/*Download*/
+
+.download {
+  background-image: linear-gradient(180deg, #626889, #9c97b8);
+  background-position: 0 0, 0 0, 0 0, 0 0;
+  background-size: 100% 100%;
+}
+.circle {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%,-50%);
+  z-index: 5;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Top Content */
+.text-gradient {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(173deg, #fff -54.74%, #fff0 230.93%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Dining */
+.text-image {
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%,-50%);
+}  
+.location {
+  -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    background-image: linear-gradient(to bottom, var(--color-1), var(--color-2));
+    border-radius: 1.5rem;
+    color: #fffc;
+    overflow: clip;
+    padding: .5rem 1rem;
+
+}
+.popover-dining-card {
+  width: 60vh;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(40px);
+  background-image: linear-gradient(to bottom, var(--color-1), var(--color-2));
+  border-radius: 1.5rem;
+  color: #fffc;
+  overflow: clip;
+  box-shadow: 2px 4px 20px #0000000a;
+}
+
+/*Modal*/
+.modal-section {
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  transform: translate(-50%,-50%);
+}
+.modal-card {
+
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(40px);
+  background-image: linear-gradient(to bottom, var(--color-1), var(--color-2));
+  
+  overflow: clip;
+  box-shadow: 2px 4px 20px #0000000a;
 }
