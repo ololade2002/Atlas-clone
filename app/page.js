@@ -1,4 +1,5 @@
 
+import React from 'react'
 import AppSection from '@/components/AtlasApp/AppSection'
 import CardSection from '@/components/AtlasCard/CardSection'
 import BenefitSection from '@/components/Benefits/BenefitSection'
@@ -6,8 +7,10 @@ import ConciergeSection from '@/components/Concierge/ConciergeSection'
 import DiningSection from '@/components/Dining/DiningSection'
 import HeroSection from '@/components/HeroSection'
 import HotelSection from '@/components/Hotels/HotelSection'
+import RewardSection from '@/components/Rewards/RewardSection'
 import TopContent from '@/components/TopContent'
-import React from 'react'
+import MembershipSection from '@/components/Membership/MembershipSection'
+import Footer from '@/components/Footer'
 
 const Home = () => {
   return (
@@ -20,6 +23,9 @@ const Home = () => {
       <BenefitSection/>
       <CardSection/>
       <AppSection/>
+      <RewardSection/>
+      <MembershipSection/>
+      <Footer/>
     </div>
   )
 }

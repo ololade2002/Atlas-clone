@@ -175,6 +175,16 @@ body {
   @apply  text-neutral font-rale font-[300] text-[24px] 
 }
 
+
+/*Footer */
+.footer-subcontainer {
+  @apply  flex flex-col uppercase font-mono text-white text-[13px] gap-4 
+}
+.footer-text {
+  @apply hover:underline
+}
+
+
 .logo {
     background-image: linear-gradient(180deg, #fffc, #ffffff7a);
     border-radius: 1rem;
