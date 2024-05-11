@@ -30,27 +30,47 @@ const MainSection = () => {
        </div>
 
        <div className='main-container2 pb-24 flex flex-col gap-7 justify-center items-center  order-1 '>
-        <div className='flex flex-row gap-7'>
-            <Image src={wheel} alt='wheel'/>
-            <Image src={plane} alt='plane'/>
-            <Image src={heart} alt='heart'/>
-            <Image src={tshirt} alt='tshirt'/>
-        </div>
-        <div className='flex flex-row gap-7'>
-            <Image src={bag} alt='bag'/>
-            <Image src={bed} alt='bed'/>
-            <Image src={car} alt='car'/>
-            <Image src={utensils} alt='utensils'/>
-        </div>
-        <div className='flex flex-row gap-7'>
-            <Image src={basket} alt='basket'/>
-            <Image src={lamp} alt='lamp'/>
-            <Image src={drink} alt='drink'/>
-            <Image src={comb} alt='comb'/>
+        <div className='flex flex-wrap px-4 w-full md:w-[60vw] justify-center items-center mx-auto gap-4 md:gap-7'>
+            <div className='reward-box'>
+            <Image className='' src={wheel} alt='wheel'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={plane} alt='plane'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={heart} alt='heart'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={tshirt} alt='tshirt'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={bag} alt='bag'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={bed} alt='bed'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={car} alt='car'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={utensils} alt='utensils'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={basket} alt='basket'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={lamp} alt='lamp'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={drink} alt='drink'/>
+            </div>
+            <div className='reward-box'>
+            <Image className='' src={comb} alt='comb'/>
+            </div>
         </div>
        </div>
 
-       <div className='main-container3  order-4 mt-32  '>
+       <div className='main-container3  order-4  '>
          <div className='main-subContainer3 '>
          <div className='h-[1px]  w-full bg-[#272727]'></div>
            <div className='dining-main'>

@@ -11,12 +11,14 @@ import RewardSection from '@/components/Rewards/RewardSection'
 import TopContent from '@/components/TopContent'
 import MembershipSection from '@/components/Membership/MembershipSection'
 import Footer from '@/components/Footer'
+import Carousel from '@/components/Carousel'
 
 const Home = () => {
   return (
-    <div>
+    <div className='homePage'>
       <HeroSection/>
       <TopContent/>
+      <Carousel/>
       <DiningSection/>
       <HotelSection/>
       <ConciergeSection/>

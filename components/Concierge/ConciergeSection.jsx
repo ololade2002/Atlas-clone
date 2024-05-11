@@ -4,7 +4,7 @@ import MainSection from './MainSection'
 
 const ConciergeSection = () => {
   return (
-    <section>
+    <section id='concierge'>
         <MainSection/>
     </section>
   )

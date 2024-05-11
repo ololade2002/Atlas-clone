@@ -2,18 +2,18 @@
 import Link from 'next/link'
 import React from 'react'
 import logo from '../public/Atlas+Logo.png'
-import alex from '../public/alex_loader (3).webp'
+import alex from '../public/alex_loader-dark.webp'
  
  const Footer = () => {
    return (
      <section className='bg-gradient-to-b from-[#141414] to-[#000]'>
-        <div className='w-[55%] py-20 flex flex-col gap-14 justify-center items-center mx-auto'>
+        <div className='w-full px-4 lg:w-[55%] py-20 flex flex-col gap-14 justify-center items-center mx-auto'>
             
         <div className="footer-container1 w-full flex justify-start items-start">
-            <Image className='invert brightness-0 w-[24%] -ml-[25px]' src={logo} alt='Logo'/>
+            <Image className='invert brightness-0 w-[24%] -ml-[10px] md:-ml-[25px]' src={logo} alt='Logo'/>
         </div>
 
-       <div className='footer-container2 w-full flex flex-row justify-between mx-auto '>
+       <div className='footer-container2 w-full flex flex-col gap-8 mg:gap-0 md:flex-row justify-between mx-auto '>
         <div className='footer-subcontainer'>
             <Link href='/' className='footer-text'>Dinner</Link>
             <Link href='/' className='footer-text'>Hotels</Link>
@@ -46,9 +46,9 @@ import alex from '../public/alex_loader (3).webp'
 
        <div className="footer-container3 w-full">
         <div className='flex justify-end items-end'>
-        <Image src={alex} className='invert-[100%] brightness-[0%] w-[25%]' alt='Alex loader'/>
+        <Image src={alex} className='mr-[30px] w-[25%]' alt='Alex loader'/>
         </div>
-        <div className='bg-white -mt-1 w-full h-[1px]'></div>
+        <div className='bg-white -mt-0 w-full h-[1px]'></div>
        </div>
 
        <div className="footer-container4">

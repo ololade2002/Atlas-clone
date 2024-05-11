@@ -14,7 +14,7 @@ function PopoverButton() {
 
   return (
     <div onClick={togglePopover} className="text-image z-40 ">
-     <h2 className='location flex items-center justify-center font-rale gap-2 hover:bg-[rgba(255,255,255,0.3)]'><FaLocationDot/>  ITO, NYC</h2>
+     <h2 className='location flex items-center justify-center  font-rale gap-2 hover:bg-[rgba(255,255,255,0.3)]'><FaLocationDot/>  ITO, NYC</h2>
 
         {isPopoverVisible && (
           <div className="popover-dining-card  flex flex-col  py-6 px-6 ">

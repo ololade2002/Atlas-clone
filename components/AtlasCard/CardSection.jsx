@@ -4,7 +4,7 @@ import MainSection from './MainSection'
 
 const CardSection = () => {
   return (
-    <div>
+    <div id='card'>
         <MainSection/>
     </div>
   )

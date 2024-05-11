@@ -3,7 +3,7 @@ import MainSection from './MainSection'
 
 const BenefitSection = () => {
   return (
-    <div>
+    <div id='benefits'>
         <MainSection/>
     </div>
   )

@@ -10,7 +10,7 @@ const MainSection = () => {
    <section className='mainsection'>
      <div className='subsection-m'>
        <div className='main-container1'>
-         <h1 className='main-text  '>Impossible reservations made easy.</h1>
+         <h1 className='main-text'>Impossible reservations made easy.</h1>
 
          <div className='main-subContainer'>
            <h3 className='main-subText  '>Atlas Dining</h3>
@@ -32,7 +32,7 @@ const MainSection = () => {
            <div className='dining-main'>
                <h2 className='dining-text'>Dedicated Atlas Reservations</h2>
                <h2 className='dining-subText'>Book a table at the very best restaurants in NYC, LA, SF, Miami,
-                and worldwide—directly inside Atlas app or by texting your Atlas concierge.¹</h2>
+                and worldwide—directly inside Atlas app or by texting your Atlas concierge.</h2>
            </div>
 
            <div className='h-[1px] w-full bg-[#272727]'></div>
@@ -47,7 +47,7 @@ const MainSection = () => {
             <div className='dining-main'>
                 <h2 className='dining-text'>Reserve Primetime Tables</h2>
                 <h2 className='dining-subText'>Get reservations at a time that is ideal for you, instead of times
-                 that are too early or too late in the day, because that’s all that was available.²</h2>
+                 that are too early or too late in the day, because that&apos;s all that was available.</h2>
             </div>
             <div className='h-[1px] w-full bg-[#272727]'></div>
 

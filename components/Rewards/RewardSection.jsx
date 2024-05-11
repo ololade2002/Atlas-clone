@@ -4,7 +4,7 @@ import MainSection from './MainSection'
 
 const RewardSection = () => {
   return (
-    <div>
+    <div id='reward'>
         <MainSection/>
     </div>
   )

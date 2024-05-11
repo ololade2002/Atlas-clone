@@ -4,7 +4,7 @@ import MainSection from './MainSection'
 
 const AppSection = () => {
   return (
-    <div>
+    <div id='app'>
         <MainSection/>
     </div>
   )

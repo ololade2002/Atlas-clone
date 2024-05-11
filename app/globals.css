@@ -46,6 +46,20 @@ body {
   }
 }
 
+
+.homePage {
+  scrollbar-color: #3d3d3d #141414;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+
+/*Form Section*/
+.form-input {
+  @apply w-full border border-[#e6e6e6] border-solid py-4 text-[#000] font-rale text-[17px] px-4 rounded-lg placeholder:font-rale placeholder:text-[#727272]
+}
+
+/*Main Section*/
+
 .mainsection {
   @apply bg-gradient-to-b from-[#141414] to-black
 }
@@ -56,22 +70,22 @@ body {
   @apply py-44 flex flex-col
 }
 .card-subsection-m {
-  @apply pt-24 pb-0 flex flex-col
+  @apply  pb-0 flex flex-col
 }
 .main-container1 {
-  @apply  w-full flex flex-col gap-28 justify-center items-center 
+  @apply  w-full px-4 flex flex-col gap-28 justify-center items-center 
 }
 .main-text {
-  @apply text-gradient text-[90px] leading-[1] font-rale w-[50%] text-center
+  @apply text-gradient text-[60px] xs:text-[60px] lg:text-[90px] leading-[1] font-rale w-full md:w-[80%] lg:w-[70%] xl:w-[50%] text-center
 }
 .main-subContainer {
-  @apply w-[50%] text-center pb-40
+  @apply w-full md:w-[80%] lg:w-[50%] text-center pb-40
 }
 .main-subText {
   @apply text-primary font-rale text-[28px] font-[400]
 }
 .main-paragraph {
-  @apply text-neutral font-rale font-[400] text-[26px] opacity-80
+  @apply text-neutral font-rale font-[400] text-[23px] sm:text-[24px] md:text-[26px] opacity-80
 }
 .main-container2 {
   @apply relative z-0
@@ -80,34 +94,34 @@ body {
   @apply h-[106vh] w-full object-cover
 }
 .main-container3 {
-  @apply py-44 w-full flex flex-col items-center justify-center
+  @apply py-44  px-4 w-full flex flex-col items-center justify-center
 }
 .main-subContainer3 {
-  @apply w-[60%]
+  @apply w-full sm:w-[80%] lg:w-[60%]
 }
 .dining-main {
-  @apply flex flex-row gap-[3.75rem] py-[4.5rem]
+  @apply flex flex-col md:flex-row gap-4 md:gap-[3.75rem] py-12 md:py-[4.5rem]
 }
 .dining-text {
-  @apply text-primary font-rale font-[300] text-[24px] w-4/12
+  @apply text-primary font-rale font-[300] text-[24px] w-full md:w-4/12
 }
 .dining-subText {
-  @apply text-neutral font-rale font-[300] text-[23px] w-8/12
+  @apply text-neutral font-rale font-[300] text-[23px] w-full md:w-8/12
 }
 .main-container4 {
   @apply flex flex-col gap-5 justify-center items-center relative
 }
 .main-image2 {
-  @apply h-[92vh] object-cover w-[60%] rounded-3xl
+  @apply h-[70vh] lg:h-[92vh] object-cover w-[85vw] lg:w-[60%] rounded-3xl
 }
 .main-video2 {
-  @apply h-[92vh] object-cover w-[60%] rounded-3xl
+  @apply h-[70vh] lg:h-[92vh] object-cover w-[85vw] lg:w-[60%] rounded-3xl
 }
 .main-btn {
-  @apply bg-[#1e1e1e] hover:bg-[rgba(255,255,255,0.1)] px-8 py-5 flex items-center justify-center gap-3  rounded-2xl mt-10
+  @apply  bg-[#1e1e1e] w-[85vw] hover:bg-[rgba(255,255,255,0.1)] lg:px-8 py-5 flex items-center justify-center gap-3  rounded-2xl mt-10
 }
 .main-btnText {
-  @apply font-rale text-[22px] font-[300]
+  @apply font-rale text-[16px] lg:text-[22px] font-[300]
 }
 .main-btnDiv {
   @apply bg-secondary rounded-full h-7 w-7 flex items-center justify-center
@@ -115,13 +129,19 @@ body {
 .main-btnIcon {
   @apply text-white text-[20px]
 }
+.popover-dining-card {
+  @apply w-[90vw] md:w-[60vw] lg:w-[60vh]
+}
+.location {
+  @apply w-fit
+}
 
 /*Modal Section*/
 .modal-panel {
   @apply w-[100vw] h-full bg-[#1e1e1e] transform overflow-hidden  py-10 text-left align-middle shadow-xl
 }
 .modal-subPanel {
-  @apply w-[80vw] pt-28 pb-14 px-6  bg-black relative rounded-3xl flex flex-col items-center justify-center mx-auto
+  @apply w-[95vw] lg:w-[80vw] pt-28 pb-14 lg:px-6  bg-black relative rounded-3xl flex flex-col items-center justify-center mx-auto
 }
 .modal-btn {
   @apply pt-6 outline-none absolute right-10 top-1
@@ -133,13 +153,13 @@ body {
   @apply  mx-auto flex flex-col
 }
 .modal-subContainer {
-  @apply w-[58%] flex flex-col mx-auto items-center justify-center
+  @apply w-[100%] px-2 lg:w-[58%] flex flex-col mx-auto items-center justify-center
 }
 .modal-mainText {
-  @apply font-rale text-[32px] font-[400] text-primary text-center
+  @apply font-rale text-[26px] lg:text-[32px] font-[400] text-primary text-center
 }
 .modal-subText {
-@apply font-rale text-[27px] font-[300] leading-[1.2] text-center text-neutral pt-1 pb-12
+@apply font-rale text-[24px] lg:text-[27px] font-[300] leading-[1.2] text-center text-neutral pt-1 pb-12
 }
 .modal-video {
   @apply  relative z-0 object-contain w-[45%] flex flex-col mx-auto 
@@ -151,7 +171,7 @@ body {
   @apply mx-auto flex items-center justify-center font-mono py-6 text-[12px] text-neutral 
 }
 .modal-container2 {
-  @apply w-[50%]  flex flex-col justify-center items-center mx-auto
+  @apply w-full px-2 lg:w-[50%]  flex flex-col justify-center items-center mx-auto
 }
 .modal-subContainer2 {
   @apply w-[100%] py-12
@@ -163,7 +183,7 @@ body {
   @apply flex flex-col py-14 px-2
 }
 .modal-subContainer2-h2 {
-  @apply font-rale text-[26px] pb-1 font-[400]
+  @apply font-rale text-[22px] lg:text-[26px] pb-1 font-[400]
 }
 .modal-suncontainer2-p {
   @apply font-mono text-[13px] text-neutral uppercase
@@ -175,6 +195,10 @@ body {
   @apply  text-neutral font-rale font-[300] text-[24px] 
 }
 
+/*Reward Section*/
+.reward-box {
+  @apply w-[26%] md:w-[20%]
+}
 
 /*Footer */
 .footer-subcontainer {
@@ -182,6 +206,9 @@ body {
 }
 .footer-text {
   @apply hover:underline
+}
+.list-item {
+  @apply hover:underline list-none
 }
 
 
@@ -275,7 +302,6 @@ body {
 
 }
 .popover-dining-card {
-  width: 60vh;
   position: absolute;
   top: 100%;
   left: 50%;

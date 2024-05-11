@@ -62,7 +62,7 @@ const ModalSection = () => {
                   <CiCircleRemove className='modal-btnIcon'/>
                 </button>
 
-                <div className='flex flex-col gap-24'>
+                <div className='flex flex-col gap-16 lg:gap-24'>
                 <div className='modal-container1'>
                   <div className='modal-subContainer'>
                   <h2 className='modal-mainText'>A world of options.</h2>

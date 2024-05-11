@@ -4,7 +4,7 @@ import MainSection from './MainSection'
 
 const MembershipSection = () => {
   return (
-    <div>
+    <div id='membership'>
         <MainSection/>
     </div>
   )
