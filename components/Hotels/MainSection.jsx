@@ -1,9 +1,9 @@
-
+"use client"
+import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import React from 'react'
 import Image from 'next/image';
 import hotel from '../../public/hotels.webp'
 import PopoverButton from './PopoverButton';
-import { LuPlus } from "react-icons/lu";
 import ModalSection from './ModalSection';
 
 const MainSection = () => {
@@ -22,10 +22,12 @@ const MainSection = () => {
        </div>
        </div>
 
-       <div className='main-container2'>
-         <Image className='main-image1' src={hotel} alt='Atlas Hotels'/>
-         <PopoverButton/>
-       </div>
+       <ParallaxBanner className='' style={{ aspectRatio: '2 / 1',height:'110vh' }}>
+        <ParallaxBannerLayer className='w-[100vw]' image='https://atlascard.com/assets/images/hotels.webp' speed={-30} />
+        <div className="absolute  mx-auto inset-0 flex flex-col items-center justify-center">
+        <PopoverButton/>
+      </div>
+     </ParallaxBanner>
 
        <div className='main-container3'>
          <div className='main-subContainer3 '>
@@ -41,7 +43,7 @@ const MainSection = () => {
            <div className='h-[1px] w-full bg-[#272727]'></div>
            <div className='dining-main'>
                <h2 className='dining-text'>Book With Points</h2>
-               <h2 className='dining-subText'>Use points you’ve earned with Atlas to book stays at 
+               <h2 className='dining-subText'>Use points you&apos;ve earned with Atlas to book stays at 
                incredible redemption rates, and get 3x points for every dollar spent on hotel bookings
                inside the app.
                </h2>
@@ -51,7 +53,7 @@ const MainSection = () => {
             <div className='dining-main'>
                 <h2 className='dining-text'>Find a Room in Seconds</h2>
                 <h2 className='dining-subText'>
-                Booking with Atlas is a breeze—discover the destination, hotel, and room that’s just
+                Booking with Atlas is a breeze—discover the destination, hotel, and room tha&apos;s just
                 right for you inside Atlas app, and book your stay in (literal) seconds.
                 </h2>
             </div>

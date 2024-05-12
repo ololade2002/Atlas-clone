@@ -8,7 +8,7 @@ const MainSection = () => {
    <section className='card-mainsection'>
      <div className='card-subsection-m'>
        <div className='main-container1 order-2 '>
-         <h1 className='main-text pt-28 '>Begin your adventure with Atlas.</h1>
+         <h1 className='main-text pt-12 md:pt-20 lg:pt-28 '>Begin your adventure with Atlas.</h1>
          <div className='main-subContainer'>
            <h3 className='main-subText  '>Atlas Membership</h3>
            <p className='main-paragraph '>
@@ -17,7 +17,7 @@ const MainSection = () => {
 
            <div className='flex flex-col pt-28 justify-center items-center'>
             <Link href='/request-invite' className='' >
-              <h2 className='wf font-rale text-[26px] bg-secondary text-white flex gap-3 items-center justify-center px-6 py-3 rounded-full transition-all hover:bg-gradient-to-l from-indigo-700 to-transparent '>
+              <h2 className='wf font-rale text-[18px] xs:text-[22px] md:text-[26px] bg-secondary text-white flex gap-3 items-center justify-center px-6 py-3 rounded-full transition-all hover:bg-gradient-to-l from-indigo-700 to-transparent '>
                 Become a Member <HiArrowRight className=' text-[20px]'/>
                </h2>
             </Link>
@@ -26,8 +26,8 @@ const MainSection = () => {
        </div>
        </div>
 
-       <div className='main-container2 pb-28 flex justify-center order-1 '>
-         <video autoPlay muted  playsInline disablePictureInPicture controls={false}  className='h-[100%]  w-full object-cover'>
+       <div className='main-container2 pb-16 md:pb-20 lg:pb-28 flex justify-center order-1 overflow-x-hidden '>
+         <video autoPlay muted  playsInline disablePictureInPicture controls={false}  className='max-w-[60rem] lg:h-[100%] lg:w-full object-cover'>
             <source  src="https://atlascard.com/assets/videos/WorldAwaits.mp4" type="video/mp4"/>    
         </video>  
        </div>

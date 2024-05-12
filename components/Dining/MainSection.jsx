@@ -1,4 +1,6 @@
 
+"use client"
+import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import React from 'react'
 import dining from '../../public/dining.webp'
 import Image from 'next/image';
@@ -21,11 +23,20 @@ const MainSection = () => {
        </div>
        </div>
 
-       <div className='main-container2 '>
+       <ParallaxBanner className='' style={{ aspectRatio: '2 / 1',height:'110vh' }}>
+        <ParallaxBannerLayer className='w-[100vw]' image='https://atlascard.com/assets/images/dining.webp' speed={-30} />
+        <div className="absolute  mx-auto inset-0 flex flex-col items-center justify-center">
+        <PopoverButton/>
+      </div>
+     </ParallaxBanner>
+       
+       {/*
+        <div className='main-container2 '>
          <Image className='main-image1 ' src={dining} alt='Atlas Dining'/>
          <PopoverButton/>
        </div>
-
+       */}
+   
        <div className='main-container3 '>
          <div className='main-subContainer3 '>
          <div className='h-[1px] w-full bg-[#272727]'></div>

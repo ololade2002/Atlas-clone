@@ -19,8 +19,8 @@ module.exports = {
         'tertiary' :'linear-gradient(173deg,#fff -54.74%, #fff0 230.93%)'
       },
       screens : {
-        
-        'xs': '400px',
+        'xxs':'260px',
+        'xs': '375px',
         'sm': '600px',
         'md': '768px',
         'lg': '992px',

@@ -42,14 +42,14 @@ const requestInvite = () => {
 
   return (
      <section>
-        <div className='flex flex-row h-[100vh] '>
+        <div className='flex flex-col-reverse lg:flex-row h-[100vh] '>
 
           <div className='w-[60%] h-[40vh] fixed top-0 left-0 '>
               <Image className='h-screen object-cover' src={woman} alt='A woman holds the beautiful Atlas Card '/>
           </div>
 
-          <div className='absolute right-0 w-[40%] bg-[#fafafa] overflow-y-auto h-[100vh]'>
-           <div className=' px-[70px] py-[48px]'>
+          <div className='absolute right-0 w-full lg:w-[40%] bg-[#fafafa] overflow-y-auto h-[100vh]'>
+           <div className=' px-[20px] sm:px-[40px] md:px-[70px] py-[48px]'>
             <Link href='/'>
             <Image className='h-14 w-full mb-4 object-contain' src={logo} alt='Atlas logo'/>
             </Link>
@@ -60,7 +60,7 @@ const requestInvite = () => {
                 <form className='flex flex-col gap-5' onSubmit={handleSubmit}>
  
                 <div className='my-8 flex flex-col gap-5'>
-                   <h2 className='text-secondary text-[37px] font-rale'>Request an invite.</h2>
+                   <h2 className='text-secondary text-[28px] xs:text-[32px] sm:text-[37px] font-rale'>Request an invite.</h2>
                    <p className='text-secondary text-[17px] font-rale'>Please tell us a bit about yourself so that we may review your request for an application.</p>
                  </div>
                   
@@ -109,7 +109,7 @@ const requestInvite = () => {
            </div>
 
            <div className='bg-white'>
-            <div className=' px-[70px] py-[48px]'>
+            <div className=' px-[20px] sm:px-[40px] md:px-[70px] py-[48px]'>
 
             <Link href='/'>
             <Image className='h-14 w-[25%]  mb-4 object-contain' src={logo} alt='Atlas logo'/>

@@ -1,7 +1,6 @@
-
+"use client"
+import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import React from 'react'
-import benefit from '../../public/benefits.webp'
-import Image from 'next/image';
 import PopoverButton from './PopoverButton';
 import ModalSection from './ModalSection';
 
@@ -21,10 +20,12 @@ const MainSection = () => {
        </div>
        </div>
 
-       <div className='main-container2'>
-         <Image className='main-image1' src={benefit} alt='Atlas Benefit'/>
-         <PopoverButton/>
-       </div>
+       <ParallaxBanner className='' style={{ aspectRatio: '2 / 1',height:'110vh' }}>
+        <ParallaxBannerLayer className='w-[100vw]' image='https://atlascard.com/assets/images/benefits.webp' speed={-30} />
+        <div className="absolute  mx-auto inset-0 flex flex-col items-center justify-center">
+        <PopoverButton/>
+      </div>
+     </ParallaxBanner>
 
        <div className='main-container3'>
          <div className='main-subContainer3'>

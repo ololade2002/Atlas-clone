@@ -20,7 +20,7 @@ const MainSection = () => {
    <section className='card-mainsection'>
      <div className='card-subsection-m'>
        <div className='main-container1 order-2 '>
-         <h1 className='main-text pt-28 '>Rewards as dynamic as you.</h1>
+         <h1 className='main-text pt-16 md:pt-28 '>Rewards as dynamic as you.</h1>
          <div className='main-subContainer'>
            <h3 className='main-subText  '>Atlas Rewards</h3>
            <p className='main-paragraph '>
@@ -29,7 +29,7 @@ const MainSection = () => {
        </div>
        </div>
 
-       <div className='main-container2 pb-24 flex flex-col gap-7 justify-center items-center  order-1 '>
+       <div className='main-container2 pb-12 md:pb-20 flex flex-col gap-7 justify-center items-center  order-1 '>
         <div className='flex flex-wrap px-4 w-full md:w-[60vw] justify-center items-center mx-auto gap-4 md:gap-7'>
             <div className='reward-box'>
             <Image className='' src={wheel} alt='wheel'/>
@@ -104,7 +104,7 @@ const MainSection = () => {
         </div>
 
         <div className='main-container4  relative order-3 '>
-            <Image className= 'h-[92vh] object-cover w-[60%] rounded-3xl bg-gradient-to-r from-[#373c59] to-[#9c97b8] ' src={dining} alt='Atlas Dining' />
+            <Image className= 'h-[70vh] md:h-[92vh] object-cover w-[85vw] md:w-[60%] rounded-3xl bg-gradient-to-r from-[#373c59] to-[#9c97b8] ' src={dining} alt='Atlas Dining' />
            
         </div>
         

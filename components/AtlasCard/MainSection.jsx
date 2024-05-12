@@ -18,8 +18,8 @@ const MainSection = () => {
        </div>
        </div>
 
-       <div className='main-container2 pb-28 flex justify-center order-1 '>
-         <video autoPlay muted loop  playsInline disablePictureInPicture controls={false}  className='h-[100%]  w-full max-w-[80%] object-contain'>
+       <div className='main-container2 pb-28 flex justify-center order-1 overflow-x-hidden '>
+         <video autoPlay muted loop  playsInline disablePictureInPicture controls={false}  className='md:h-[100%] max-w-[40rem]  md:w-full md:max-w-[80%] object-contain'>
             <source  src="https://atlascard.com/assets/videos/atlas-woman.mp4" type="video/mp4"/>    
         </video>  
        </div>

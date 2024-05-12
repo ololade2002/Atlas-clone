@@ -9,6 +9,7 @@
   scrollbar-color: #3d3d3d #141414;
   scrollbar-gutter: stable;
   scrollbar-width: thin;
+
 }
 
 
@@ -67,25 +68,25 @@ body {
   @apply bg-black
 }
 .subsection-m {
-  @apply py-44 flex flex-col
+  @apply pt-24 pb-40 md:py-44 flex flex-col
 }
 .card-subsection-m {
   @apply  pb-0 flex flex-col
 }
 .main-container1 {
-  @apply  w-full px-4 flex flex-col gap-28 justify-center items-center 
+  @apply  w-full px-4 flex flex-col gap-20 md:gap-28 justify-center items-center 
 }
 .main-text {
-  @apply text-gradient text-[60px] xs:text-[60px] lg:text-[90px] leading-[1] font-rale w-full md:w-[80%] lg:w-[70%] xl:w-[50%] text-center
+  @apply text-gradient text-[45px] xs:text-[58px] lg:text-[90px] leading-[1] font-rale w-full md:w-[80%] lg:w-[70%] xl:w-[50%] text-center
 }
 .main-subContainer {
-  @apply w-full md:w-[80%] lg:w-[50%] text-center pb-40
+  @apply w-full md:w-[80%] lg:w-[50%] text-center pb-20 md:pb-40
 }
 .main-subText {
   @apply text-primary font-rale text-[28px] font-[400]
 }
 .main-paragraph {
-  @apply text-neutral font-rale font-[400] text-[23px] sm:text-[24px] md:text-[26px] opacity-80
+  @apply text-neutral font-rale font-[400] text-[20px] xs:text-[23px] sm:text-[24px] md:text-[26px] opacity-80
 }
 .main-container2 {
   @apply relative z-0
@@ -94,7 +95,7 @@ body {
   @apply h-[106vh] w-full object-cover
 }
 .main-container3 {
-  @apply py-44  px-4 w-full flex flex-col items-center justify-center
+  @apply py-24 md:py-44  px-4 w-full flex flex-col items-center justify-center
 }
 .main-subContainer3 {
   @apply w-full sm:w-[80%] lg:w-[60%]
@@ -112,13 +113,13 @@ body {
   @apply flex flex-col gap-5 justify-center items-center relative
 }
 .main-image2 {
-  @apply h-[70vh] lg:h-[92vh] object-cover w-[85vw] lg:w-[60%] rounded-3xl
+  @apply h-[65vh] lg:h-[92vh] object-cover w-[90vw] lg:w-[60%] rounded-3xl
 }
 .main-video2 {
-  @apply h-[70vh] lg:h-[92vh] object-cover w-[85vw] lg:w-[60%] rounded-3xl
+  @apply h-[70vh] lg:h-[92vh] object-cover w-[90vw] lg:w-[60%] rounded-3xl
 }
 .main-btn {
-  @apply  bg-[#1e1e1e] w-[85vw] hover:bg-[rgba(255,255,255,0.1)] lg:px-8 py-5 flex items-center justify-center gap-3  rounded-2xl mt-10
+  @apply  bg-[#1e1e1e] w-[90vw] xs:w-[90vw] sm:w-fit hover:bg-[rgba(255,255,255,0.1)] sm:px-8 py-5 flex items-center justify-center gap-3  rounded-2xl mt-10
 }
 .main-btnText {
   @apply font-rale text-[16px] lg:text-[22px] font-[300]
@@ -132,8 +133,8 @@ body {
 .popover-dining-card {
   @apply w-[90vw] md:w-[60vw] lg:w-[60vh]
 }
-.location {
-  @apply w-fit
+.location1 {
+  @apply w-[90vw] sm:w-fit
 }
 
 /*Modal Section*/
@@ -165,7 +166,7 @@ body {
   @apply  relative z-0 object-contain w-[45%] flex flex-col mx-auto 
 }
 .modal-line {
-  @apply h-[1px] w-[60%] mx-auto bg-[#272727]
+  @apply h-[1px] w-[90%] lg:w-[60%] mx-auto bg-[#272727]
 }
 .modal-p {
   @apply mx-auto flex items-center justify-center font-mono py-6 text-[12px] text-neutral 
@@ -222,6 +223,22 @@ body {
     left: 48%;
     padding: 5px 5px; 
 }
+.download-logo {
+  background-image: linear-gradient(180deg, #fffc, #ffffff7a);
+  border-radius: 1rem;
+  box-shadow: 2px 4px 20px #0000000a;
+  width: fit-content;
+  position: fixed;
+  top: 2.5%;
+  left: 48%;
+  padding: 5px 5px; 
+}
+@media screen and (max-width: 480px) {
+  .download-logo {
+    left: 43%;
+  }
+}
+
 .heroText {
   position: absolute;
   top: 17%;

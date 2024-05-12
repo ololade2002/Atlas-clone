@@ -74,8 +74,8 @@ const ModalSection = () => {
                   </div>
                 
                   <div className=''>
-                    <div className='w-[50%] h-[85vh] flex rounded-3xl bg-gradient-to-r from-[#373c59] to-[#9c97b8] justify-start flex-col mx-auto'>
-                    <Image className='w-[87%] h-[87%] rounded-tl-3xl flex justify-start' src={cardfront} alt='Front of the card'/>  
+                    <div className='w-[85%] lg:w-[50%] h-[55vh] md:h-[85vh] flex rounded-3xl bg-gradient-to-r from-[#373c59] to-[#9c97b8] justify-start flex-col mx-auto'>
+                    <Image className='w-[87%] h-[87%] object-cover rounded-tl-3xl flex justify-start' src={cardfront} alt='Front of the card'/>  
                     </div>
                     <div className='modal-line'></div>
                     <p className='modal-p'>DESIGNED AND ENGINEERED. FRONT TO BACK.</p>
@@ -89,8 +89,8 @@ const ModalSection = () => {
                   </div>
                 
                   <div className=''>
-                    <div className='w-[50%] h-[85vh] flex rounded-3xl bg-gradient-to-r from-[#373c59] to-[#9c97b8] justify-end items-end flex-col mx-auto'>
-                    <Image className='w-[87%] h-[87%] rounded-tl-3xl flex justify-start' src={cardcorner} alt='Front of the card'/>  
+                    <div className='w-[85%] lg:w-[50%] h-[55vh] md:h-[85vh] flex rounded-3xl bg-gradient-to-r from-[#373c59] to-[#9c97b8] justify-end items-end flex-col mx-auto'>
+                    <Image className='w-[87%] h-[87%] object-cover rounded-tl-3xl flex justify-start' src={cardcorner} alt='Front of the card'/>  
                     </div>
                     <div className='modal-line'></div>
                     <p className='modal-p'>MAKE ATLAS CARD YOURS WITH AN ENGRAVED ICON.</p>
@@ -104,8 +104,8 @@ const ModalSection = () => {
                   </div>
                 
                   <div className=''>
-                    <div className='w-[50%] h-[85vh] flex rounded-3xl bg-gradient-to-r from-[#373c59] to-[#9c97b8] justify-center items-center flex-col mx-auto'>
-                    <Image className=' object-contain w-[89%] rounded-tl-3xl flex justify-start' src={cardback} alt='Front of the card'/>  
+                    <div className='w-[85%] lg:w-[50%] h-[55vh] md:h-[85vh] flex rounded-3xl bg-gradient-to-r from-[#373c59] to-[#9c97b8] justify-center items-center flex-col mx-auto'>
+                    <Image className=' object-contain w-[98%] md:w-[89%] rounded-tl-3xl flex justify-start' src={cardback} alt='Front of the card'/>  
                     </div>
                     <div className='modal-line'></div>
                     <p className='modal-p'>MADE WITH PRIVACY AND SECURITY IN MIND.</p>

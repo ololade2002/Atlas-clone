@@ -18,8 +18,8 @@ const MainSection = () => {
        </div>
        </div>
 
-       <div className='main-container2  pb-28 flex justify-center order-1 '>
-         <video autoPlay muted loop  playsInline disablePictureInPicture controls={false}  className='h-[100vh]  w-full max-w-[80%] object-contain'>
+       <div className='main-container2 pb-16 md:pb-28 flex justify-center order-1 overflow-x-hidden '>
+         <video autoPlay muted loop  playsInline disablePictureInPicture controls={false}  className='md:h-[100vh] max-w-[25rem]  md:w-full md:max-w-[80%] object-contain'>
             <source  src="https://atlascard.com/assets/videos/AppHero.mp4" type="video/mp4"/>    
         </video>  
        </div>

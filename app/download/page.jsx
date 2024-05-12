@@ -1,7 +1,5 @@
 
 import React from 'react'
-import Image from 'next/image'
-import alex_loader from '../../public/alex_loader (3).webp'
 import PopoverButton from '@/components/PopoverButton'
 
 const download = () => {
@@ -10,9 +8,9 @@ const download = () => {
     <div className='download h-[90vh] relative '>
        <PopoverButton/>
 
-      <div className='flex flex-col gap-6 py-28 justify-center items-center'>
-         <h1 className='text-[85px] font-rale font-[500] text-white'>Download app.</h1>
-         <p className='font-rale text-[28px] w-full lg:w-[50%] text-center text-[hsla(0,0%,100%,.6)]'>Scan the QR code or visit atlascard.com/download on your iPhone to download Atlas.</p>
+      <div className='flex flex-col px-4 gap-4 md:gap-6 py-28 justify-center items-center'>
+         <h1 className='text-[40px] xs:text-[45px] md:text-[85px] font-rale font-[500] text-white'>Download app.</h1>
+         <p className='font-rale text-[19px] xs:text-[24px] md:text-[28px] w-full lg:w-[50%] text-center text-[hsla(0,0%,100%,.6)]'>Scan the QR code or visit atlascard.com/download on your iPhone to download Atlas.</p>
       </div> 
     </div>
 

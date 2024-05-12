@@ -7,7 +7,7 @@ import alex from '../public/alex_loader-dark.webp'
  const Footer = () => {
    return (
      <section className='bg-gradient-to-b from-[#141414] to-[#000]'>
-        <div className='w-full px-4 lg:w-[55%] py-20 flex flex-col gap-14 justify-center items-center mx-auto'>
+        <div className='w-full px-4 lg:w-[55%] py-20 flex flex-col gap-8 md:gap-14 justify-center items-center mx-auto'>
             
         <div className="footer-container1 w-full flex justify-start items-start">
             <Image className='invert brightness-0 w-[24%] -ml-[10px] md:-ml-[25px]' src={logo} alt='Logo'/>
@@ -46,7 +46,7 @@ import alex from '../public/alex_loader-dark.webp'
 
        <div className="footer-container3 w-full">
         <div className='flex justify-end items-end'>
-        <Image src={alex} className='mr-[30px] w-[25%]' alt='Alex loader'/>
+        <Image src={alex} className='md:mr-[30px] w-[70%] md:w-[25%]' alt='Alex loader'/>
         </div>
         <div className='bg-white -mt-0 w-full h-[1px]'></div>
        </div>

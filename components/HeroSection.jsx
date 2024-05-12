@@ -15,8 +15,8 @@ const HeroSection = () => {
       <PopoverButton/>
 
       <div className='flex flex-col items-center justify-center  py-6'>
-        <p className='font-mono text-[13px] text-neutral'>ACCESS COVETED DINING, HOTELS, AND EVENTS.</p>
-      {/*  <HiArrowDown id='#top-content' className=' text-neutral text-xl animate-bounce' /> */}
+        <p className='font-mono text-center text-[13px] text-neutral'>ACCESS COVETED DINING, HOTELS, AND EVENTS.</p>
+      
       </div>
 
     </div>

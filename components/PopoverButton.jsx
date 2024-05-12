@@ -18,7 +18,7 @@ function PopoverButton() {
   };
 
   return (
-    <div onClick={togglePopover} className="logo z-30 ">
+    <div onClick={togglePopover} className="download-logo z-30 ">
       <Image className='w-[55px] h-[55px] object-contain' src={logo} alt='Atlas logo'/>
 
         {isPopoverVisible && (
