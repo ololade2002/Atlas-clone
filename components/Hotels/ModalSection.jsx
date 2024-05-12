@@ -127,7 +127,7 @@ const ModalSection = () => {
                
                       <div className='h-[1px] w-full bg-[#272727]'></div>
                       <div className='modal-subContainer2Div '>
-                        <h2 className='modal-subContainer2-h2 '>Claridges's </h2>
+                        <h2 className='modal-subContainer2-h2 '>Claridges&apos;s </h2>
                         <p className='modal-suncontainer2-p '>London, United Kingdom</p>
                       </div>
                

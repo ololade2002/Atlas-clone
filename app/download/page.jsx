@@ -2,7 +2,7 @@
 import React from 'react'
 import PopoverButton from '@/components/PopoverButton'
 
-const download = () => {
+const Download = () => {
   return (
    <section>
     <div className='download h-[90vh] relative '>
@@ -24,4 +24,4 @@ const download = () => {
   )
 }
 
-export default download
+export default Download

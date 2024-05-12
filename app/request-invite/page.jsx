@@ -7,8 +7,7 @@ import woman from '@/public/atlas-woman.webp'
 import logo from '@/public/Atlas+Logo.png'
 import alex_loader from '../../public/alex_loader (3).webp'
 
-const requestInvite = () => {
-
+const RequestInvite = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -147,15 +146,12 @@ const requestInvite = () => {
            <div className='text-neutral font-mono flex flex-col gap-6 text-[12px]'>
             <p>1. PLEASE NOTE THAT THIS IS NOT A FORMAL FINANCIAL APPLICATION AND ANY PERSONAL INFORMATION YOU PROVIDE WILL NOT BE USED FOR CREDIT DECISIONING.</p>
             <p>ISSUED BY LEAD BANK | 2024 © ATLAS EXPLORATION, INC.</p>
-            <p>ATLAS EXPLORATION, INC IS A TECHNOLOGY COMPANY, NOT A BANK. ATLAS CARD IS ISSUED BY LEAD BANK ("ISSUER"). 
+            <p>ATLAS EXPLORATION, INC IS A TECHNOLOGY COMPANY, NOT A BANK. ATLAS CARD IS ISSUED BY LEAD BANK (ISSUER). 
               AN APPLICATION IS REQUIRED. CARDHOLDERS MUST BE AT LEAST 18 YEARS OLD AND A CITIZEN OF THE UNITED STATES, 
-              OR A PERMANENT RESIDENT WITH A VALID SOCIAL SECURITY NUMBER (SSN) OR ITIN. FINANCING IS SUBJECT TO ISSUER'S 
+              OR A PERMANENT RESIDENT WITH A VALID SOCIAL SECURITY NUMBER (SSN) OR ITIN. FINANCING IS SUBJECT TO ISSUER&apos;S 
               APPROVAL. PAYMENT OF ACCOUNT BALANCE DUE IN FULL MONTHLY. FEES MAY BE ASSESSED ON OVERDUE AMOUNTS. 
               AN ANNUAL MEMBERSHIP FEE APPLIES.</p>
            </div>
-
-
-
 
             </div>
            </div>
@@ -166,4 +162,4 @@ const requestInvite = () => {
   )
 }
 
-export default requestInvite
+export default RequestInvite
