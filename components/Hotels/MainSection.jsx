@@ -3,7 +3,7 @@ import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import React from 'react'
 import Image from 'next/image';
 import hotel from '../../public/hotels.webp'
-import PopoverButton from './PopoverButton';
+import PopoverButton from './popoverButton.jsx';
 import ModalSection from './ModalSection';
 
 const MainSection = () => {
