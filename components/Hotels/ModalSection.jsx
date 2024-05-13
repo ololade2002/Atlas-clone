@@ -143,7 +143,7 @@ const ModalSection = () => {
                         <p className='modal-suncontainer2-p '>London, United Kingdom</p>
                       </div>
                
-                      <div className='h-[1px] w-full bg-[#272727]'></div>
+                      <div className='h-[1px] w-full bg-[#272727] '></div>
                       <div className='modal-subContainer2Div '>
                         <h2 className='modal-subContainer2-h2 '>Montage Big Sky</h2>
                         <p className='modal-suncontainer2-p '>Big Sky, Montana</p>
