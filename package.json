@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
     "@gsap/react": "^2.1.1",
     "@headlessui/react": "^1.7.19",
     "gsap": "^3.12.5",
     "next": "14.2.3",
     "react": "^18",
+    "react-awesome-reveal": "^4.2.10",
     "react-dom": "^18",
     "react-icons": "^5.1.0",
     "react-scroll-parallax": "^3.4.5"

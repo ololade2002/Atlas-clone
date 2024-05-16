@@ -1,8 +1,7 @@
 "use client"
 import React from 'react';
-import { HiArrowDown } from "react-icons/hi2";
 import PopoverButton from './PopoverButton';
-
+import { Fade } from "react-awesome-reveal";
 
 
 const HeroSection = () => {
@@ -15,8 +14,10 @@ const HeroSection = () => {
       <PopoverButton/>
 
       <div className='flex flex-col items-center justify-center  py-6'>
-        <p className='font-mono text-center text-[13px] text-neutral'>ACCESS COVETED DINING, HOTELS, AND EVENTS.</p>
       
+        <Fade delay={0.1} cascade damping={0.1} className='font-mono text-center text-[13px] text-neutral'>ACCESS COVETED DINING, HOTELS, AND EVENTS.</Fade>
+        
+       
       </div>
 
     </div>
