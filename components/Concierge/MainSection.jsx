@@ -4,7 +4,7 @@ import React from 'react'
 import dining from '../../public/experiences.webp'
 import Image from 'next/image';
 import PopoverButton from './PopoverButton';
-
+import {Fade} from 'react-awesome-reveal'
 
 const MainSection = () => {
   return (
@@ -30,7 +30,7 @@ const MainSection = () => {
      </ParallaxBanner>
 
        <div className='main-container3'>
-         <div className='main-subContainer3 '>
+         <Fade direction='up' className='main-subContainer3 '>
          <div className='h-[1px] w-full bg-[#272727]'></div>
            <div className='dining-main'>
                <h2 className='dining-text'>Just One Text Away</h2>
@@ -54,7 +54,7 @@ const MainSection = () => {
             </div>
             <div className='h-[1px] w-full bg-[#272727]'></div>
 
-          </div>
+          </Fade>
         </div>
 
         <div className='main-container4'>

@@ -3,6 +3,7 @@ import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import React from 'react'
 import PopoverButton from './PopoverButton';
 import ModalSection from './ModalSection';
+import {Fade} from 'react-awesome-reveal'
 
 const MainSection = () => {
   return (
@@ -28,7 +29,7 @@ const MainSection = () => {
      </ParallaxBanner>
 
        <div className='main-container3'>
-         <div className='main-subContainer3'>
+         <Fade direction='up' className='main-subContainer3'>
          <div className='h-[1px] w-full bg-[#272727]'></div>
            <div className='dining-main'>
                <h2 className='dining-text'>Atlas Flex Pass</h2>
@@ -53,7 +54,7 @@ const MainSection = () => {
             </div>
             <div className='h-[1px] w-full bg-[#272727]'></div>
 
-          </div>
+          </Fade>
         </div>
 
           <div className='main-container4'>

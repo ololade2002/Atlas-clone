@@ -1,3 +1,4 @@
+
 "use client"
 import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import React from 'react'
@@ -5,6 +6,7 @@ import Image from 'next/image';
 import hotel from '../../public/hotels.webp'
 import PopoverButton from './popoverButton.jsx';
 import ModalSection from './ModalSection';
+import {Fade} from 'react-awesome-reveal'
 
 const MainSection = () => {
   return (
@@ -14,7 +16,7 @@ const MainSection = () => {
          <h1 className='main-text'>The fastest way to your paradise.</h1>
 
          <div className='main-subContainer'>
-           <h3 className='main-subText '>Atlas Hotels</h3>
+           <h2 className='main-subText '>Atlas Hotels</h2>
            <p className='main-paragraph'>
            Experience the best way to book stays at the world&apos;s finest hotels. Browse a curated selection in app, 
            find your paradise, then book with points or preferred rates, for better deals than anywhere else.
@@ -30,7 +32,7 @@ const MainSection = () => {
      </ParallaxBanner>
 
        <div className='main-container3'>
-         <div className='main-subContainer3 '>
+         <Fade direction='up' className='main-subContainer3 '>
          <div className='h-[1px] w-full bg-[#272727]'></div>
            <div className='dining-main'>
                <h2 className='dining-text'>Curated Luxury Hotels</h2>
@@ -59,7 +61,7 @@ const MainSection = () => {
             </div>
             <div className='h-[1px] w-full bg-[#272727]'></div>
 
-          </div>
+          </Fade>
         </div>
 
         <div className='main-container4'>

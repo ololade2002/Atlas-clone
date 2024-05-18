@@ -6,6 +6,7 @@ import dining from '../../public/dining.webp'
 import Image from 'next/image';
 import PopoverButton from './PopoverButton';
 import ModalSection from './ModalSection';
+import {Fade} from 'react-awesome-reveal'
 
 const MainSection = () => {
   return (
@@ -15,7 +16,7 @@ const MainSection = () => {
          <h1 className='main-text'>Impossible reservations made easy.</h1>
 
          <div className='main-subContainer'>
-           <h3 className='main-subText  '>Atlas Dining</h3>
+           <h2 className='main-subText  '>Atlas Dining</h2>
            <p className='main-paragraph '>
               You want to eat at great restaurants. So does everyone else. The difference is—you&apos;ve got Atlas. 
               Discover the hottest restaurants around town with Atlas Dining, and reserve your tables during peak hours.
@@ -29,16 +30,9 @@ const MainSection = () => {
         <PopoverButton/>
       </div>
      </ParallaxBanner>
-       
-       {/*
-        <div className='main-container2 '>
-         <Image className='main-image1 ' src={dining} alt='Atlas Dining'/>
-         <PopoverButton/>
-       </div>
-       */}
    
        <div className='main-container3 '>
-         <div className='main-subContainer3 '>
+         <Fade direction='up'  className='main-subContainer3 '>
          <div className='h-[1px] w-full bg-[#272727]'></div>
            <div className='dining-main'>
                <h2 className='dining-text'>Dedicated Atlas Reservations</h2>
@@ -62,7 +56,7 @@ const MainSection = () => {
             </div>
             <div className='h-[1px] w-full bg-[#272727]'></div>
 
-          </div>
+          </Fade>
         </div>
 
         <div className='main-container4 relative  '>

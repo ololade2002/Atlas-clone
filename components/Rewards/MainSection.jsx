@@ -1,4 +1,4 @@
-
+"use client"
 import React from 'react'
 import dining from '../../public/download.webp'
 import Image from 'next/image';
@@ -14,6 +14,7 @@ import basket from '../../public/basket.svg'
 import lamp from '../../public/lamp.svg'
 import drink from '../../public/drink.svg'
 import comb from '../../public/comb.svg'
+import {Fade, Zoom} from 'react-awesome-reveal'
 
 const MainSection = () => {
   return (
@@ -31,47 +32,47 @@ const MainSection = () => {
 
        <div className='main-container2 pb-12 md:pb-20 flex flex-col gap-7 justify-center items-center  order-1 '>
         <div className='flex flex-wrap px-4 w-full md:w-[60vw] justify-center items-center mx-auto gap-4 md:gap-7'>
-            <div className='reward-box'>
+            <Zoom className='reward-box'>
             <Image className='' src={wheel} alt='wheel'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom  className='reward-box'>
             <Image className='' src={plane} alt='plane'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom className='reward-box'>
             <Image className='' src={heart} alt='heart'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom  className='reward-box'>
             <Image className='' src={tshirt} alt='tshirt'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom className='reward-box'>
             <Image className='' src={bag} alt='bag'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom className='reward-box'>
             <Image className='' src={bed} alt='bed'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom className='reward-box'>
             <Image className='' src={car} alt='car'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom className='reward-box'>
             <Image className='' src={utensils} alt='utensils'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom className='reward-box'>
             <Image className='' src={basket} alt='basket'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom className='reward-box'>
             <Image className='' src={lamp} alt='lamp'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom className='reward-box'>
             <Image className='' src={drink} alt='drink'/>
-            </div>
-            <div className='reward-box'>
+            </Zoom>
+            <Zoom className='reward-box'>
             <Image className='' src={comb} alt='comb'/>
-            </div>
+            </Zoom>
         </div>
        </div>
 
        <div className='main-container3  order-4  '>
-         <div className='main-subContainer3 '>
+         <Fade direction='up' className='main-subContainer3 '>
          <div className='h-[1px]  w-full bg-[#272727]'></div>
            <div className='dining-main'>
                <h2 className='dining-text'>5x Points on BLADE Flights</h2>
@@ -100,7 +101,7 @@ const MainSection = () => {
             </div>
             <div className='h-[1px] w-full bg-[#272727]'></div>
 
-          </div>
+          </Fade>
         </div>
 
         <div className='main-container4  relative order-3 '>

@@ -1,8 +1,8 @@
-
+"use client"
 import React from 'react'
 import dining from '../../public/CardInHand.webp'
 import Image from 'next/image';
-
+import {Fade} from 'react-awesome-reveal'
 
 const MainSection = () => {
   return (
@@ -25,7 +25,7 @@ const MainSection = () => {
        </div>
 
        <div className='main-container3  order-4 mt-0  '>
-         <div className='main-subContainer3 '>
+         <Fade direction='up' className='main-subContainer3 '>
          <div className='h-[1px]  w-full bg-[#272727]'></div>
            <div className='dining-main'>
                <h2 className='dining-text'>Unlimited Virtual Cards</h2>
@@ -47,7 +47,7 @@ const MainSection = () => {
             </div>
             <div className='h-[1px] w-full bg-[#272727]'></div>
 
-          </div>
+          </Fade>
         </div>
 
         <div className='main-container4  relative order-3 '>

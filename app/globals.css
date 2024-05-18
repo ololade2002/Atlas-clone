@@ -253,7 +253,7 @@ body {
 }
 
 .popover-card {
-  width: 60vh;
+ 
   position: absolute;
   top: 0%;
   left: 50%;
@@ -264,6 +264,14 @@ body {
   border-radius: 1rem;
   box-shadow: 2px 4px 20px #0000000a;
 }
+.popover-card {
+  @apply bg-transparent sm:w-[60vh] w-[100vh]
+}
+/*
+.popover-card {
+  @apply w-[100vw] left-[30%] xs:left-[40%] sm:left-[50%] sm:w-[60vh]
+}
+*/
 
 .popover-card button {
   margin-top: 10px;

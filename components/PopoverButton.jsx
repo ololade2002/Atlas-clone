@@ -34,10 +34,10 @@ function PopoverButton() {
          
            <div className='flex flex-col gap-4 justify-center items-center px-6'>
             <Link href='/request-invite' className='bg-secondary px-4 py-4 rounded-full transition-all hover:bg-gradient-to-l from-indigo-700 to-transparent' >
-                <h2 className='font-mono uppercase text-white flex flex-row gap-2 items-center justify-center  '>Become a founding member <HiArrowRight className=' text-[20px]'/> </h2>
+                <h2 className='font-mono uppercase text-white text-[14px] sm:text-[16px] flex flex-row gap-[4px] sm:gap-2 items-center justify-center  '>Become a founding member <HiArrowRight className=' text-[20px]'/> </h2>
             </Link>
             <Link href='/download' className='border-2 border-solid border-secondary px-4 py-4 rounded-full transition-all hover:text-white hover:bg-gradient-to-l from-indigo-400 to-transparent'>
-                <h2 className='font-mono uppercase text-secondary flex flex-row gap-2 items-center justify-center   '>Download on the app store <HiArrowDownTray className='text-[20px]'/> </h2>
+                <h2 className='font-mono uppercase text-secondary text-[14px] sm:text-[16px] flex flex-row gap-[4px] sm:gap-2 items-center justify-center   '>Download on the app store <HiArrowDownTray className='text-[20px]'/> </h2>
             </Link>
            </div>
 
