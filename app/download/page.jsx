@@ -14,9 +14,9 @@ const Download = () => {
       </div> 
     </div>
 
-    <div className='circle  h-56 w-56 rounded-full bg-white'></div>
+  
 
-     <div className='h-[30vh] flex items-end pb-2 justify-center bg-[#373c59]'>
+     <div className='h-[20vh] flex items-end pb-4 justify-center bg-[#373c59]'>
         <p className='font-mono uppercase text-[15px]'>Available on the <span className='underline'>app store</span></p>
      </div>
 
