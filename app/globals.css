@@ -258,7 +258,7 @@ body {
   top: 0%;
   left: 50%;
   transform: translateX(-50%);
-  backdrop-filter: blur(36px);
+  backdrop-filter: blur(76px);
   background-image: linear-gradient(180deg, #fffc, #ffffff7a);
   background-color: #f0f0f070;
   border-radius: 1rem;

@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 const HeroSection = () => {
   return (
     <div>
-       <video autoPlay muted loop playsInline disablePictureInPicture controls={false}  className=' relative z-0 w-[100%] h-[80vh] sm:h-[89vh]  object-cover rounded-b-3xl '>
+       <video autoPlay muted loop playsInline disablePictureInPicture controls={false}  className=' relative z-0 w-[100%] h-[84vh] sm:h-[89vh]  object-cover rounded-b-3xl '>
          <source src="https://atlascard.com/assets/videos/HeroVideo.mp4" type="video/mp4"/>    
       </video> 
  
